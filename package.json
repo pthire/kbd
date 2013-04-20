@@ -1,0 +1,21 @@
+{
+	"name": "kbd",
+	"main" : "kbd.node",
+	"author" : "P. Thiré",
+	"license" : "BSD",
+	"keywords" : ["keyboard", "input", "echo", "canonical"] ,
+	"description" : "keyboard utilities : sync/async input, disable/enable echo canonical",
+	"repository" : {
+		"type" : "git",
+		"url" : "git://github.com/pthire/kbd.git"
+	},
+	"scripts" : {
+		"install": "node-gyp rebuild"
+	},
+	"engines" : {
+		"node": ">=0.10.0"
+	},
+	"version": "0.0.1",
+	"main": "./build/Release/kbd.node",
+	"dependencies": {}
+}
