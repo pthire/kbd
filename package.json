@@ -13,9 +13,10 @@
 		"install": "node-gyp rebuild"
 	},
 	"engines" : {
-		"node": ">=0.10.0"
+		"node": ">=0.8.0"
 	},
 	"version": "0.0.3",
 	"main": "./build/Release/kbd.node",
-	"dependencies": {}
+	"dependencies": {},
+	"os" : [ "linux" ]
 }
