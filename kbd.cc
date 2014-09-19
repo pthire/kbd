@@ -3,8 +3,8 @@
 // kbd module for node
 //
 // Author : P. Thiré
-// Date : 20/04/2013
-// Version : 0.0.1
+// Date : 19/09/2014
+// Version : 0.0.2
 //
 // This module give differents oriented keyboard synchrone/asynchrone 
 // functions :
@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <termios.h>
+#include <unistd.h>
 
 using namespace v8;
 

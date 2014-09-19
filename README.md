@@ -46,5 +46,5 @@ var cb = function (error, key) {
 
 kbd.setEcho(false);             // no echo mode
 kbd.setCanonical(false);        // non canonical mode
-keyboard.getKey(cb);            // put callback
+kbd.getKey(cb);            // put callback
 ```
