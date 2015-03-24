@@ -1,7 +1,7 @@
 "use strict";
 
-var keyboard = require('./build/Release/kbd.node');
-//var keyboard = require('kbd');
+var keyboard = require('./build/Release/addon.node');
+//var keyboard = require('addon');
 var util = require('util');
 
 // getLineSync
