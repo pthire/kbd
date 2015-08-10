@@ -19,7 +19,7 @@
 	"main": "./build/Release/kbd.node",
 	"gypfile": true,
 	"dependencies": {
-		"nan": "*"
+		"nan": "1.8.4"
 	},
 	"os" : [ "linux", "darwin" ]
 }
