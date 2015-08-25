@@ -15,11 +15,11 @@
 	"engines" : {
 		"node": ">=0.8.0"
 	},
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"main": "./build/Release/kbd.node",
 	"gypfile": true,
 	"dependencies": {
-		"nan": "*"
+		"nan": "1.8.4
 	},
 	"os" : [ "linux", "darwin" ]
 }
