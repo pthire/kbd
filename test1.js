@@ -16,7 +16,7 @@ console.log("\nYou pressed '" + k + "'");
 // asynchronous read with canonical mode off
 
 addon.getKey(function(error, key) {
-	console.log("\nYou pressed '" + k + "'");
+	console.log("\nYou pressed '" + key + "'");
 	addon.setCanonical(true);
 	console.log("Canonical mode is now on");
 });

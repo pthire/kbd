@@ -25,25 +25,28 @@ std::string GetLine () {
 
 //--------------------------------------------------------------------------
 
-char* GetKey () {
-	char* chaine;
+std::string GetKey () {
+	char* c_chaine;
 	struct termios t;
 	int len;
 
-	chaine = (char *)malloc(1000);
+	c_chaine = (char *)malloc(1000);
 	tcgetattr(0, &t);
 	t.c_lflag &= ~(ECHO | ICANON);
 
-	len = read (0, chaine, 1);
+	len = read (0, c_chaine, 1);
 
 	t.c_lflag |= (ECHO | ICANON);
 
 	if(len == -1) {
-		chaine[0] = '\0';
+		c_chaine[0] = '\0';
 	} else {
-		chaine[len] = '\0';
+		c_chaine[len] = '\0';
 	}
-	return  chaine;
+
+	std::string chaine(c_chaine);
+	delete (c_chaine);
+	return chaine;
 }
 
 //--------------------------------------------------------------------------

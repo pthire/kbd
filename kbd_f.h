@@ -8,7 +8,7 @@
 #include <string>
 
 std::string GetLine ();
-char* GetKey ();
+std::string GetKey ();
 int SetEcho (int new_status);
 int SetCanonical(int new_status);
 
